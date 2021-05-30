@@ -36,6 +36,7 @@ public class HashNoCompletedParticipant {
 
         return answer;
     }
+
     public String solution2(String[] participant, String[] completion) {
         String answer = "";
 

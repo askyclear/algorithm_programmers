@@ -19,13 +19,16 @@ public class Level1GymSuit {
         int answer = 0;
 
         Map<Integer, Integer> oksMap = new HashMap<>();
+
         for (int i = 0; i < lost.length; i++) {
             oksMap.put(lost[i], LOST);
         }
 
+
         for (int i = 0; i < reserve.length; i++) {
             oksMap.put(reserve[i], oksMap.getOrDefault(reserve[i], EXIST) + 1);
         }
+
 
         for (int i = 1; i <= n; i++) {
             int state = oksMap.getOrDefault(i, EXIST);
@@ -38,12 +41,12 @@ public class Level1GymSuit {
                 int leftPerson = i - 1;
                 int rightPerson = i + 1;
 
-                if(oksMap.getOrDefault(leftPerson, 0) == LOST) {
+                if(oksMap.getOrDefault(leftPerson, EXIST) == LOST) {
                     answer++;
 
                 } else if (oksMap.getOrDefault(rightPerson, EXIST) == LOST) {
                     oksMap.put(rightPerson, EXIST);
-                    
+
                     answer++;
                     i++;
                 }
