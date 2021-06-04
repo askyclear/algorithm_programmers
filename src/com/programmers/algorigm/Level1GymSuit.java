@@ -15,6 +15,9 @@ public class Level1GymSuit {
     private static final int EXIST = 0;
     private static final int RESERVE = 1;
 
+    public Level1GymSuit() {
+    }
+
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = 0;
 
