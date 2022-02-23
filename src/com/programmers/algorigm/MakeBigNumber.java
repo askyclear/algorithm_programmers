@@ -1,24 +1,29 @@
 package com.programmers.algorigm;
 
 public class MakeBigNumber {
-    public int solution(String name) {
-        int answer = 0;
-        int length = name.length();
-
-        int index;
-        int move = length - 1;
-
-        for(int i = 0; i < name.length(); i++){
-            answer += Math.min(name.charAt(i) - 'A', 'Z' - name.charAt(i) + 1);
-
-            index = i + 1;
-            while(index < length && name.charAt(index) == 'A'){
-                index++;
-            }
-            move = Math.min(move, i * 2 + length - index);
-            move = Math.min(move, (length - index) * 2 + i);
+    public String solution(String number, int k) {
+        if (number.length() == k) {
+            return "";
         }
 
-        return answer + move;
+        char maxDigitNumber = 0;
+        int maxDigitIndex = 0;
+        int remainK = k;
+
+        for (int i = 0; i<= k; i++) {
+            char temp = number.charAt(i);
+
+            if (temp > maxDigitNumber) {
+                maxDigitNumber = temp;
+                maxDigitIndex = i;
+            }
+        }
+
+        remainK -= maxDigitIndex;
+        if (remainK == 0) {
+            return number.substring(maxDigitIndex);
+        } else {
+            return maxDigitNumber + solution(number.substring(maxDigitIndex + 1), remainK);
+        }
     }
 }
