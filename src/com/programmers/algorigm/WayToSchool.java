@@ -26,9 +26,10 @@ public class WayToSchool {
 
     public int solution(int m, int n, int[][] puddles) {
         int[][] dp = new int[m+1][n+1];
+        boolean[][] puddlesFlag = new boolean[m+1][n+1];
 
         for (int[] puddle : puddles) {
-            dp[puddle[0]][puddle[1]] = Integer.MAX_VALUE;
+            puddlesFlag[puddle[0]][puddle[1]] = true;
         }
 
         dp[1][1] = 1;
@@ -39,7 +40,7 @@ public class WayToSchool {
                     continue;
                 }
 
-                if (dp[width][height] == Integer.MAX_VALUE) {
+                if (puddlesFlag[width][height]) {
                     dp[width][height] = 0;
                     continue;
                 }
