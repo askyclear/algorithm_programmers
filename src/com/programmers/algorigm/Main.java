@@ -54,6 +54,12 @@ public class Main {
         MakeBigNumber makeBigNumber = new MakeBigNumber();
         System.out.println(makeBigNumber.solution("4177252841", 4));
 
+        WayToSchool wayToSchool = new WayToSchool();
+        wayToSchool.solution(4,3,new int[][]{{2,2}});
+        Thievery thievery = new Thievery();
+        thievery.solution(new int[]{8,1,1,8});
+        TargetNumber targetNumber = new TargetNumber();
+        targetNumber.solution(new int[]{4,1,2,1}, 4);
     }
 
 }
