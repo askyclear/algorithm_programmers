@@ -11,8 +11,7 @@ public class TravalPath {
     public String[] solution(String[][] tickets) {
         used = new boolean[tickets.length];
         paths = new ArrayList<>();
-        int count = 0;
-        dfs(count, "ICN", "ICN", tickets);
+        dfs(0, "ICN", "ICN", tickets);
         Collections.sort(paths);
         String[] answer = paths.get(0).split(",");
         return answer;
