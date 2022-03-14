@@ -32,7 +32,7 @@ public class Immigration {
     }
     public long solution1(int n, int[] times) {
         long answer = 0;
-        PriorityQueue<ImmigrationInformation> priorityQueue = new PriorityQueue<>((o1, o2) -> o1.finishTime + o1.time > o2.finishTime + o2.time ? 1 : 0);
+        PriorityQueue<ImmigrationInformation> priorityQueue = new PriorityQueue<>((o1, o2) -> o1.finishTime + o1.time > o2.finishTime + o2.time ? 1 : -1);
 
         for(int time : times) {
             priorityQueue.add(new ImmigrationInformation(time, 0));
