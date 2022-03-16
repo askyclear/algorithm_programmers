@@ -60,6 +60,12 @@ public class Main {
         thievery.solution(new int[]{8,1,1,8});
         TargetNumber targetNumber = new TargetNumber();
         targetNumber.solution(new int[]{4,1,2,1}, 4);
+
+        Immigration immigration = new Immigration();
+        System.out.println(immigration.solution(3, new int[] {1,2,3}));
+
+        SteppingStone steppingStone = new SteppingStone();
+        steppingStone.solution(25, new int[]{2,14,11,21,17}, 2);
     }
 
 }
