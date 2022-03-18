@@ -2,7 +2,7 @@ package com.programmers.algorigm;
 
 public class WordChange {
     private static boolean[] visited;
-    
+
     public int solution(String begin, String target, String[] words) {
         visited = new boolean[words.length];
 
@@ -21,14 +21,14 @@ public class WordChange {
                 continue;
             }
 
-            int k = 0;
+            int sameCount = 0;
             for (int j = 0; j < begin.length(); j++) {
                 if (begin.charAt(j) == words[i].charAt(j)) {
-                    k++;
+                    sameCount++;
                 }
             }
 
-            if (k == begin.length() - 1) {
+            if (sameCount == begin.length() - 1) {
                 visited[i] = true;
                 answer = dfs(words[i], target, words, cnt + 1);
                 visited[i] = false;
