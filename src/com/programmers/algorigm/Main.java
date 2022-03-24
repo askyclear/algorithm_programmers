@@ -66,6 +66,22 @@ public class Main {
 
         SteppingStone steppingStone = new SteppingStone();
         steppingStone.solution(25, new int[]{2,14,11,21,17}, 2);
+
+        KakaoBlindRecruitment1 kakaoBlindRecruitment1 = new KakaoBlindRecruitment1();
+        kakaoBlindRecruitment1.solution(new String[]{"muzi","frodo", "apeach", "neo"}, new String[]{"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"}, 2);
+
+        LottoMaxMinRank lottoMaxMinRank = new LottoMaxMinRank();
+        lottoMaxMinRank.solution(new int[]{44, 1, 0, 0, 31, 25}, new int[]{31, 10, 45, 1, 6, 19});
+        lottoMaxMinRank.solution(new int[]{0, 0, 0, 0, 0, 0}, new int[]{38, 19, 20, 40, 15, 25});
+        lottoMaxMinRank.solution(new int[]{45, 4, 35, 20, 3, 9}, new int[]{20, 9, 3, 45, 4, 35});
+        KakaoBlindRecruitment2021NewId newId = new KakaoBlindRecruitment2021NewId();
+        newId.solution("...!@BaT#*..y.abcdefghijklm");
+        newId.solution("z-+.^.");
+        newId.solution("=.=");
+        newId.solution("123_.def");
+        newId.solution("abcdefghijklmn.p");
+        KakaoBlindRecruitment2021NumbereStr numbereStr = new KakaoBlindRecruitment2021NumbereStr();
+        numbereStr.solution("one4seveneight");
     }
 
 }
