@@ -1,28 +1,12 @@
 package com.programmers.algorigm;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Kakao2020Keypad {
-    private static final Map<Integer, Integer> keypad = new HashMap<>();
-    static {
-        keypad.put(1, 0);
-        keypad.put(2, 1);
-        keypad.put(3, 2);
-        keypad.put(4, 3);
-        keypad.put(5, 4);
-        keypad.put(6, 5);
-        keypad.put(7, 6);
-        keypad.put(8, 7);
-        keypad.put(9, 8);
-        keypad.put(0, 10);
-    }
     public String solution(int[] numbers, String hand) {
         StringBuilder answer = new StringBuilder();
         int currentLeftHand = 9;
         int currentRightHand = 11;
         for(int number : numbers) {
-            int padIndex = keypad.get(number);
+            int padIndex = number == 0 ? 10 : number - 1;
             int n = padIndex / 3;
             int mod = padIndex % 3;
 
