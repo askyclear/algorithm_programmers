@@ -12,29 +12,28 @@ public class Kakao2020Keypad {
 
             if (mod == 0) {
                 answer.append("L");
-                currentLeftHand = 3 * n;
+                currentLeftHand = padIndex;
             } else if (mod == 1) {
                 int leftHandLength = Math.abs(n - (currentLeftHand / 3)) + Math.abs(mod - (currentLeftHand % 3));
                 int rightHandLength = Math.abs(n - (currentRightHand / 3)) + Math.abs(mod - (currentRightHand % 3));
-                int nextIndex =  3 * n + 1;
 
                 if (leftHandLength < rightHandLength) {
                     answer.append("L");
-                    currentLeftHand = nextIndex;
+                    currentLeftHand = padIndex;
                 } else if (leftHandLength > rightHandLength) {
                     answer.append("R");
-                    currentRightHand = nextIndex;
+                    currentRightHand = padIndex;
                 } else if (hand.equals("right")){
                     answer.append("R");
-                    currentRightHand = nextIndex;
+                    currentRightHand = padIndex;
                 } else {
                     answer.append("L");
-                    currentLeftHand = nextIndex;
+                    currentLeftHand = padIndex;
                 }
 
             } else {
                 answer.append("R");
-                currentRightHand = 3 * n + 2;
+                currentRightHand = padIndex;
             }
         }
 
