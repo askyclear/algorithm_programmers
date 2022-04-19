@@ -1,6 +1,10 @@
 package com.programmers.algorigm;
 
 
+import com.programmers.algorigm.year2022.month02.*;
+import com.programmers.algorigm.year2022.month03.*;
+import com.programmers.algorigm.year2022.month04.*;
+
 public class Main {
     public static void main(String[] args) {
         int[] prices = {1, 2, 3, 2, 3};
