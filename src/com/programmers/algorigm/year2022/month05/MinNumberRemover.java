@@ -9,7 +9,7 @@ public class MinNumberRemover {
         for (int number : arr) {
             answerList.add(number);
         }
-        
+
         int minNumber = answerList.stream().min(Integer::compareTo).get();
         int[] answer = answerList.stream().filter(integer -> integer != minNumber).mapToInt(Integer::intValue).toArray();
         if (answer.length == 0) {
