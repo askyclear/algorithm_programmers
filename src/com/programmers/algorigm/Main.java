@@ -148,6 +148,13 @@ public class Main {
 
         Shiritori shiritori = new Shiritori();
         shiritori.solution(3, new String[]{"tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank"});
+        ProperBracketString properBracketString = new ProperBracketString();
+        properBracketString.solution("[](){}");
+        properBracketString.solution("}]()[{");
+        properBracketString.solution("[)(]");
+        properBracketString.solution("}}}");
+        LengthOfVisit lengthOfVisit = new LengthOfVisit();
+        lengthOfVisit.solution("LRLRL");
     }
 
 }
