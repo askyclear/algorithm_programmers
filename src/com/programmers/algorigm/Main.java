@@ -104,13 +104,13 @@ public class Main {
         compression.solution("xababcdcdababcdcd");
 
         MenuRenewal renewal = new MenuRenewal();
-        renewal.solution(new String[]{"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"}, new int[]{2,3,4});
-        renewal.solution(new String[]{"ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"}, new int[]{2,3,5});
-        renewal.solution(new String[]{"XYZ", "XWY", "WXA"}, new int[]{2,3,4});
+        renewal.solution(new String[]{"ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"}, new int[]{2, 3, 4});
+        renewal.solution(new String[]{"ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"}, new int[]{2, 3, 5});
+        renewal.solution(new String[]{"XYZ", "XWY", "WXA"}, new int[]{2, 3, 4});
 
         FailRate failRate = new FailRate();
         failRate.solution(5, new int[]{2, 1, 2, 6, 2, 4, 3, 3});
-        failRate.solution(4, new int[]{1,1,1,1,1});
+        failRate.solution(4, new int[]{1, 1, 1, 1, 1});
 
         BracketConversion bracketConversion = new BracketConversion();
         System.out.println(bracketConversion.solution("()))((()"));
@@ -128,23 +128,23 @@ public class Main {
         System.out.println(maximizeFormulas.solution("100-200*300-500+20"));
         System.out.println(maximizeFormulas.solution("50*6-3*2"));
         PrimeNumberCreator primeNumberCreator = new PrimeNumberCreator();
-        System.out.println(primeNumberCreator.solution(new int[]{1,2,3,4}));
-        System.out.println(primeNumberCreator.solution(new int[]{1,2,7,6,4}));
-        System.out.println(primeNumberCreator.solution(new int[]{1,2,3}));
-        System.out.println(primeNumberCreator.solution(new int[]{1,2,4}));
+        System.out.println(primeNumberCreator.solution(new int[]{1, 2, 3, 4}));
+        System.out.println(primeNumberCreator.solution(new int[]{1, 2, 7, 6, 4}));
+        System.out.println(primeNumberCreator.solution(new int[]{1, 2, 3}));
+        System.out.println(primeNumberCreator.solution(new int[]{1, 2, 4}));
 
         DescendingOrderString descendingOrderString = new DescendingOrderString();
-        descendingOrderString.solution("Zbcdefg"	);
-        SiderPassword aa    = new SiderPassword();
+        descendingOrderString.solution("Zbcdefg");
+        SiderPassword aa = new SiderPassword();
         aa.solution("a B z", 1);
 
         ColoringBook coloringBook = new ColoringBook();
-        coloringBook.solution(4,4, new int[][]{{1, 1, 0, 0},{0, 1, 1, 0},{0, 0, 1, 1},{0, 0, 0, 1}});
+        coloringBook.solution(4, 4, new int[][]{{1, 1, 0, 0}, {0, 1, 1, 0}, {0, 0, 1, 1}, {0, 0, 0, 1}});
         MatrixRotate matrixRotate = new MatrixRotate();
-        matrixRotate.solution(6,6, new int[][]{{2,2,5,4},{3,3,6,6}, {5,1,6,3}});
+        matrixRotate.solution(6, 6, new int[][]{{2, 2, 5, 4}, {3, 3, 6, 6}, {5, 1, 6, 3}});
 
         RankSearch rankSearch = new RankSearch();
-        rankSearch.solution(new String[]{"java backend junior pizza 150","python frontend senior chicken 210","python frontend senior chicken 150","cpp backend senior pizza 260","java backend junior chicken 80","python backend senior chicken 50"},new String[]{"java and backend and junior and pizza 100","python and frontend and senior and chicken 200","cpp and - and senior and pizza 250","- and backend and senior and - 150","- and - and - and chicken 100","- and - and - and - 150"});
+        rankSearch.solution(new String[]{"java backend junior pizza 150", "python frontend senior chicken 210", "python frontend senior chicken 150", "cpp backend senior pizza 260", "java backend junior chicken 80", "python backend senior chicken 50"}, new String[]{"java and backend and junior and pizza 100", "python and frontend and senior and chicken 200", "cpp and - and senior and pizza 250", "- and backend and senior and - 150", "- and - and - and chicken 100", "- and - and - and - 150"});
 
         Shiritori shiritori = new Shiritori();
         shiritori.solution(3, new String[]{"tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank"});
@@ -155,6 +155,10 @@ public class Main {
         properBracketString.solution("}}}");
         LengthOfVisit lengthOfVisit = new LengthOfVisit();
         lengthOfVisit.solution("LRLRL");
-    }
+        Delivery delivery = new Delivery();
+        delivery.solution(5, new int[][]{{1, 2, 1}, {2, 3, 3}, {5, 2, 2}, {1, 4, 2}, {5, 3, 1}, {5, 4, 2}}, 3);
 
+        RepeatBinaryNumber repeatBinaryNumber = new RepeatBinaryNumber();
+        repeatBinaryNumber.solution("110010101001");
+    }
 }
