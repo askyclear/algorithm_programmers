@@ -6,6 +6,7 @@ import com.programmers.algorigm.year2022.month02.FindPrimeNumber;
 import com.programmers.algorigm.year2022.month03.*;
 import com.programmers.algorigm.year2022.month04.*;
 import com.programmers.algorigm.year2022.month05.*;
+import com.programmers.algorigm.year2022.month06.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -160,5 +161,22 @@ public class Main {
 
         RepeatBinaryNumber repeatBinaryNumber = new RepeatBinaryNumber();
         repeatBinaryNumber.solution("110010101001");
+        NThGame nThGame = new NThGame();
+        nThGame.solution(2,4,2,1);
+        nThGame.solution(16,16,2,1);
+        nThGame.solution(16,16,2,2);
+
+        MatrixProduct matrixProduct = new MatrixProduct();
+        matrixProduct.solution(new int[][]{{1,4},{3,2},{4,1}}, new int[][]{{3,3},{3,3}});
+
+        KthPrimeNumberCount kthPrimeNumberCount = new KthPrimeNumberCount();
+        kthPrimeNumberCount.solution(2, 3);
+        kthPrimeNumberCount.solution(437674, 3);
+        kthPrimeNumberCount.solution(110011, 10);
+        FibonacciNumber fibonacciNumber = new FibonacciNumber();
+        fibonacciNumber.solution(3);
+
+        HanoiTop hanoiTop = new HanoiTop();
+        hanoiTop.solution(2);
     }
 }
