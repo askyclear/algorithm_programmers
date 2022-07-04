@@ -1,4 +1,4 @@
-package com.programmers.algorigm.year2022.month06;
+package com.programmers.algorigm.year2022.month07;
 
 public class ThreeNTiling {
     public int solution(int n) {
