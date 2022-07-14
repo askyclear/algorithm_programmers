@@ -7,6 +7,7 @@ import com.programmers.algorigm.year2022.month03.*;
 import com.programmers.algorigm.year2022.month04.*;
 import com.programmers.algorigm.year2022.month05.*;
 import com.programmers.algorigm.year2022.month06.*;
+import com.programmers.algorigm.year2022.month07.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -162,12 +163,12 @@ public class Main {
         RepeatBinaryNumber repeatBinaryNumber = new RepeatBinaryNumber();
         repeatBinaryNumber.solution("110010101001");
         NThGame nThGame = new NThGame();
-        nThGame.solution(2,4,2,1);
-        nThGame.solution(16,16,2,1);
-        nThGame.solution(16,16,2,2);
+        nThGame.solution(2, 4, 2, 1);
+        nThGame.solution(16, 16, 2, 1);
+        nThGame.solution(16, 16, 2, 2);
 
         MatrixProduct matrixProduct = new MatrixProduct();
-        matrixProduct.solution(new int[][]{{1,4},{3,2},{4,1}}, new int[][]{{3,3},{3,3}});
+        matrixProduct.solution(new int[][]{{1, 4}, {3, 2}, {4, 1}}, new int[][]{{3, 3}, {3, 3}});
 
         KthPrimeNumberCount kthPrimeNumberCount = new KthPrimeNumberCount();
         kthPrimeNumberCount.solution(2, 3);
@@ -178,5 +179,27 @@ public class Main {
 
         HanoiTop hanoiTop = new HanoiTop();
         hanoiTop.solution(2);
+
+        NumberExpresion numberExpresion = new NumberExpresion();
+        numberExpresion.solution(15);
+
+        NumberBlock numberBlock = new NumberBlock();
+        numberBlock.solution(1, 10);
+        ThreeNTiling threeNTiling = new ThreeNTiling();
+        threeNTiling.solution(4);
+        ParkingFee parkingFee = new ParkingFee();
+        parkingFee.solution(new int[]{180, 5000, 10, 600}, new String[]{"05:34 5961 IN", "06:00 0000 IN", "06:34 0000 OUT", "07:59 5961 OUT", "07:59 0148 IN", "18:59 0000 IN", "19:09 0148 OUT", "22:59 5961 IN", "23:00 5961 OUT"});
+
+        FileNameOrder fileNameOrder = new FileNameOrder();
+        fileNameOrder.solution(new String[] {"img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"});
+        fileNameOrder.solution(new String[] {"F-5 Freedom Fighter", "B-50 Superfortress", "A-10 Thunderbolt II", "F-14 Tomcat"});
+
+        LempelZivWelch lempelZivWelch = new LempelZivWelch();
+        lempelZivWelch.solution("KAKAO");
+        lempelZivWelch.solution("TOBEORNOTTOBEORTOBEORNOT");
+        lempelZivWelch.solution("ABABABABABABABAB");
+        NSquaredArray nSquaredArray = new NSquaredArray();
+        nSquaredArray.solution(3,2,5);
+        nSquaredArray.solution(4,7,14);
     }
 }
