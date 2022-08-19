@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class TwoQueueEquals {
     public int solution(int[] queue1, int[] queue2) {
-        long maxInsertCount = queue1.length * 2L;
+        long maxInsertCount = queue1.length * 2L + 2;
         long queue1TotalSum = 0;
         long queue2TotalSum = 0;
 
