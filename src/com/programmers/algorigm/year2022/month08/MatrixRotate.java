@@ -102,7 +102,6 @@ public class MatrixRotate {
     }
 
     public int[] makeArr(int[][] rc) {
-
         int width = rc[0].length;
         int height = rc.length;
         int[] arr = new int[width * height - Math.max(width - 2, 0) * Math.max(height - 2, 0)];
